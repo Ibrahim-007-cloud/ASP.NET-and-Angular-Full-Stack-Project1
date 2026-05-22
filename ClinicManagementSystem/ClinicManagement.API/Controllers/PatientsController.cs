@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
-using ClinicManagement.Application.Interfaces;  // ✅ Fixed (removed "System")
-using ClinicManagement.Application.DTOs;        // ✅ Fixed (removed "System")
-using ClinicManagement.Domain.Entities;         // ✅ Fixed (removed "System")
+using ClinicManagement.Application.Interfaces;  
+using ClinicManagement.Application.DTOs;        
+using ClinicManagement.Domain.Entities; // <-- Ensure this contains your base 'Patient' entity
 
-namespace ClinicManagement.API.Controllers      // ✅ Fixed namespace
+namespace ClinicManagement.API.Controllers      
 {
     [ApiController]
     [Route("api/[controller]")]
@@ -46,21 +46,40 @@ namespace ClinicManagement.API.Controllers      // ✅ Fixed namespace
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] Patient patient)
+        public async Task<IActionResult> Create([FromBody] PatientCreateDto dto)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
+            // Correctly maps the clean DTO into the Domain Entity model
+            var patient = new Patient
+            {
+                Name = dto.Name,
+                Age = dto.Age,
+                Gender = dto.Gender,
+                Contact = dto.Contact
+            };
+
             await _repo.AddAsync(patient);
             await _repo.SaveChangesAsync();
+            
             return CreatedAtAction(nameof(GetById), new { id = patient.Id }, patient);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] Patient patient)
+        public async Task<IActionResult> Update(int id, [FromBody] PatientCreateDto dto)
         {
-            if (id != patient.Id) return BadRequest(new { message = "ID match failed." });
+            if (!ModelState.IsValid) return BadRequest(ModelState);
 
-            await _repo.UpdateAsync(patient);
+            var existingPatient = await _repo.GetByIdAsync(id);
+            if (existingPatient == null) return NotFound(new { message = "Patient records not found." });
+
+            // Update only the basic properties so relationships are untouched
+            existingPatient.Name = dto.Name;
+            existingPatient.Age = dto.Age;
+            existingPatient.Gender = dto.Gender;
+            existingPatient.Contact = dto.Contact;
+
+            await _repo.UpdateAsync(existingPatient);
             var success = await _repo.SaveChangesAsync();
             if (!success) return BadRequest(new { message = "Could not update entity records." });
 

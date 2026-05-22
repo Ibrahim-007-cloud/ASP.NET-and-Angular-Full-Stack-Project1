@@ -1,11 +1,3 @@
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.csproj.AssemblyReference.cache
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.AssemblyInfoInputs.cache
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.AssemblyInfo.cs
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.csproj.CoreCompileInputs.cache
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.MvcApplicationPartsAssemblyInfo.cache
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\appsettings.Development.json
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\appsettings.json
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\ClinicManagement.API.staticwebassets.endpoints.json
@@ -55,6 +47,15 @@ C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Clinic
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\ClinicManagement.Application.pdb
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\ClinicManagement.Infrastructure.pdb
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\ClinicManagement.Domain.pdb
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.csproj.AssemblyReference.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.AssemblyInfoInputs.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.AssemblyInfo.cs
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.csproj.CoreCompileInputs.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.sourcelink.json
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -70,3 +71,6 @@ C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\refint
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.pdb
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.genruntimeconfig.cache
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ref\ClinicManagement.API.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
