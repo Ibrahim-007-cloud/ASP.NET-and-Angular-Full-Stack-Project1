@@ -1,0 +1,15 @@
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\bin\Debug\net10.0\ClinicManagement.Application.deps.json
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\bin\Debug\net10.0\ClinicManagement.Application.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\bin\Debug\net10.0\ClinicManagement.Application.pdb
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\bin\Debug\net10.0\ClinicManagement.Domain.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\bin\Debug\net10.0\ClinicManagement.Domain.pdb
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.csproj.AssemblyReference.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.AssemblyInfoInputs.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.AssemblyInfo.cs
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.csproj.CoreCompileInputs.cache
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicMa.5CCDC83B.Up2Date
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\refint\ClinicManagement.Application.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ClinicManagement.Application.pdb
+C:\Projects\ClinicManagementSystem\ClinicManagement.Application\obj\Debug\net10.0\ref\ClinicManagement.Application.dll

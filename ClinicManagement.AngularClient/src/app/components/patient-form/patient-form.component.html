@@ -1,0 +1,62 @@
+<div class="container mt-5" style="max-width: 650px;">
+  <div class="card shadow-lg border-0">
+    <div class="card-header bg-primary text-white py-3">
+      <h4 class="mb-0 fw-bold">📝 New Patient Intake Registration</h4>
+    </div>
+    <div class="card-body p-4">
+      <form [formGroup]="patientForm" (ngSubmit)="saveRegistry()" novalidate>
+        
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Patient Legal Name</label>
+          <input type="text" formControlName="name" class="form-control" [ngClass]="{'is-invalid': patientForm.get('name')?.touched && patientForm.get('name')?.invalid}">
+          <div class="invalid-feedback">A valid record name matching 3 minimum characters is required.</div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label class="form-label fw-semibold">Age</label>
+            <input type="number" formControlName="age" class="form-control" [ngClass]="{'is-invalid': patientForm.get('age')?.touched && patientForm.get('age')?.invalid}">
+            <div class="invalid-feedback">Enter a valid age metrics indicator (0-125).</div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label class="form-label fw-semibold">Gender</label>
+            <select formControlName="gender" class="form-select">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Emergency Contact Number</label>
+          <input type="text" formControlName="contact" class="form-control" [ngClass]="{'is-invalid': patientForm.get('contact')?.touched && patientForm.get('contact')?.invalid}">
+          <div class="invalid-feedback">Provide a functional telephone connection string identifier.</div>
+        </div>
+
+        <hr class="text-muted my-4">
+        <h5 class="text-secondary fw-bold mb-3">💡 Primary Consultation Intake Assignment</h5>
+
+        <div class="mb-3">
+          <label class="form-label fw-semibold">Consulting Practitioner</label>
+          <select formControlName="initialDoctorId" class="form-select" [ngClass]="{'is-invalid': patientForm.get('initialDoctorId')?.touched && patientForm.get('initialDoctorId')?.invalid}">
+            <option value="">-- Choose On-Duty Medical Expert Staff Reference --</option>
+            <option *ngFor="let doc of doctors" [value]="doc.id">{{doc.name}} ({{doc.specialization}})</option>
+          </select>
+          <div class="invalid-feedback">Assigning an available clinical unit specialist is required.</div>
+        </div>
+
+        <div class="mb-4">
+          <label class="form-label fw-semibold">Chief Complaint / Illness Symptoms Summary</label>
+          <textarea formControlName="initialProblem" rows="3" class="form-control" [ngClass]="{'is-invalid': patientForm.get('initialProblem')?.touched && patientForm.get('initialProblem')?.invalid}"></textarea>
+          <div class="invalid-feedback">Please enter initial symptomatic medical diagnostics context.</div>
+        </div>
+
+        <div class="d-flex justify-content-end gap-2">
+          <a routerLink="/" class="btn btn-light px-4">Cancel</a>
+          <button type="submit" [disabled]="patientForm.invalid" class="btn btn-primary px-4 shadow">Commit Admission Records</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

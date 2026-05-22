@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="text-primary fw-bold">🏥 Clinic Patient Registry Management</h2>
+    <a routerLink="/add" class="btn btn-success px-4 shadow-sm">+ Register New Patient</a>
+  </div>
+
+  <div class="input-group mb-3 shadow-sm">
+    <input type="text" [(ngModel)]="searchTerm" (input)="loadPatients()" 
+           class="form-control" placeholder="🔍 Search records dynamically by Patient Name or Assigned Doctor..."/>
+  </div>
+
+  <div class="card shadow border-0">
+    <div class="table-responsive">
+      <table class="table table-hover align-middle mb-0">
+        <thead class="table-dark">
+          <tr>
+            <th>Patient Reference Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Primary Contact Link</th>
+            <th>Diagnosed Symptom Context</th>
+            <th>Assigned Consultant</th>
+            <th>Last Evaluation Session</th>
+            <th class="text-center">Action Controls</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of patients">
+            <td class="fw-bold">{{item.name}}</td>
+            <td>{{item.age}} yrs</td>
+            <td><span class="badge bg-secondary">{{item.gender}}</span></td>
+            <td>{{item.contact}}</td>
+            <td><span class="text-truncate d-inline-block" style="max-width: 150px;">{{item.lastProblem}}</span></td>
+            <td class="text-info fw-semibold">{{item.assignedDoctor}}</td>
+<td>{{ (item.lastVisitDate | date:'mediumDate') || 'Pending First Checkup' }}</td>            <td class="text-center">
+              <button (click)="deleteRecord(item.id)" class="btn btn-outline-danger btn-sm mx-1">🗑️ Delete</button>
+            </td>
+          </tr>
+          <tr *ngIf="patients.length === 0">
+            <td colspan="8" class="text-center text-muted py-4">No health record listings match your filter parameters.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
