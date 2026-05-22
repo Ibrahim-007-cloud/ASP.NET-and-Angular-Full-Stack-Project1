@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
-using ClinicManagement.Application.Interfaces;  
-using ClinicManagement.Application.DTOs;        
-using ClinicManagement.Domain.Entities; // <-- Ensure this contains your base 'Patient' entity
+using ClinicManagement.Application.Interfaces;  // To recognize IPatientRepository [cite: 40]
+using ClinicManagement.Application.DTOs;        // To recognize PatientDto and PatientCreateDto [cite: 39]
+using ClinicManagement.Domain.Entities;        // To recognize Patient, Doctor, and Visit [cite: 43]// <-- Ensure this contains your base 'Patient' entity
 
 namespace ClinicManagement.API.Controllers      
 {

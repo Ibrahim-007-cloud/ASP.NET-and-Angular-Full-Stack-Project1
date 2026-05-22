@@ -18,6 +18,9 @@ C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Scalar
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\SQLitePCLRaw.core.dll
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
@@ -71,6 +74,3 @@ C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\refint
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.pdb
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ClinicManagement.API.genruntimeconfig.cache
 C:\Projects\ClinicManagementSystem\ClinicManagement.API\obj\Debug\net10.0\ref\ClinicManagement.API.dll
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Projects\ClinicManagementSystem\ClinicManagement.API\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
